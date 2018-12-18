@@ -1,0 +1,20 @@
+import java.util.Date;
+
+public class learnJava {
+
+
+    public static void main(String[] args) {
+        /*
+        String name = "John";
+        Date now = new Date(4, 02, 2001);
+        float weight = 4.555f;
+        String namePerson2 = "Oliver";
+        */
+        przedstawSie("John", new Date(04, 02, 2014), 4.555f, "oliver");
+
+    }
+
+    public static void przedstawSie(String name, Date now, float weight, String namePerson2) {
+        System.out.println(name + " natomiast data to:  " + now + " a waga to:" + weight + " " + namePerson2);
+    }
+}
