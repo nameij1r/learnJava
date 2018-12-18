@@ -1,0 +1,26 @@
+import java.util.Date;
+
+public class learnJava {
+
+
+    public static void main(String[] args) {
+
+        text1();
+        withInt();
+    }
+
+    public static void withInt() {
+   
+        Date now = new Date(2014, 5, 2);
+        float weight = 3.126F;
+        System.out.println(weight + " ");
+        System.out.println(now.toString());
+
+    }
+
+    public static void text1() {
+        String name = "Garfield";
+        String namePerson = "John";
+        System.out.println(name + " " + namePerson + " ");
+    }
+}
