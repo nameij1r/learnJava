@@ -1,0 +1,78 @@
+import java.util.Date;
+import java.util.Scanner;
+
+public class learnJava {
+
+
+    public static void main(String[] args) {
+        System.out.println("Write gm,ga,gn");
+        Scanner it= new Scanner(System.in);
+        welcomeDay(it.nextLine());
+
+
+
+
+        System.out.println("What is your cat name? ");
+
+        Scanner saveYourRecord = new Scanner(System.in);
+
+        speak(saveYourRecord.nextLine());
+        System.out.println("Write: ");
+        speakBot(saveYourRecord.nextLine());
+
+        //Welcome you in day
+
+    }
+
+    /*
+    Write (ga, gm or gn) to next level
+     */
+
+    public static void welcomeDay(String it){
+
+        switch (it){
+            case "gm":
+                System.out.println("Good Morning");
+                break;
+            case "ga":
+                System.out.println("Good afternoon");
+                break;
+            case "gn":
+                System.out.println("Good night");
+                break;
+
+            default:
+                System.out.println("so hello");
+        }
+    }
+
+
+
+    public static void speak(String i) {
+        System.out.println(i);
+    }
+
+    public static void speakBot(String t){
+         System.out.println("Write something: ");
+         System.out.println(t);
+
+        try {
+            if (t == "test") {
+                System.out.println("Its work!");
+            } else if (t == "gg") {
+                System.out.println("second if working");
+            } else {
+                System.out.println("Warnning");
+            }
+        }
+        catch (Exception e){
+            System.out.println("Something went wrong..");
+        }
+        finally {
+            System.out.println("Now working your program");
+            Scanner save = new Scanner(System.in);
+            System.out.println(save.nextLine());
+
+        }
+    }
+}
