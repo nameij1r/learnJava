@@ -1,0 +1,50 @@
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class learnJava {
+
+
+    public static void main(String[] args) {
+        // data
+        Date time = new Date();
+        System.out.println(time.toString());
+
+        System.out.println("--------------------------------");
+
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-DD");
+        System.out.println("CHINESE: " + sdf.format(time));
+        float mass2 = 5.4f;
+
+
+
+
+        //mas
+        Scanner masa = new Scanner(System.in);
+        mass1(masa.nextFloat());
+
+        //wyjatek
+        try{
+
+            while (mass2 < 4){
+                System.out.println("test");
+                mass1(masa.nextFloat());
+            }
+            do {
+                System.out.println("Write: ");
+            }
+            while(mass1(masa.nextFloat())<=10);
+        }
+        catch(Exception e){
+            System.out.println("Something is wrong");
+        }
+
+
+    }
+        public static int mass1(float masa){
+
+            System.out.println(masa);
+            return 0;
+        }
+}
