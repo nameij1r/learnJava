@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class learnJava {
+
+
+    public static void main(String[] args) {
+        Scanner user = new Scanner(System.in);
+
+        int x = 0;
+        int i = 0;
+
+        try {
+            System.out.println("Write test to continue program...");
+            do {
+
+                if (user.nextLine().equals("test")) {
+                    System.out.println("Its work");
+                    break;
+                } else {
+                    System.out.println("Warning, try again");
+                }
+                i++;
+            }while(i<=5);
+            System.out.println("x = " + x);
+        }
+        catch(Exception ex) {
+            System.out.println("Warning");
+        }
+        
+    }
+}
