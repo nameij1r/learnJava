@@ -1,0 +1,90 @@
+public class learnProgramming {
+
+    public static void main(String[] args) {
+        learnProgramming test122 = new learnProgramming();
+        employed worker = new employed();
+        employed worker2 = new employed();
+
+
+
+
+        worker.speak("Roman");
+        worker2.speak("Zbyszek");
+
+        System.out.println(worker.calculator(53));
+        System.out.println(worker2.calculator(55));
+        System.out.println(test122.numbs(443242));
+        System.out.println(test122.numbs2(41,42,222));
+
+        test122.woman("nata","henora", "polosa");
+
+
+        Computer admin1 = new Computer();
+        admin1.testAdmin();
+
+        if(worker.calculator2(44,22) == worker2.calculator1(5,2)){
+            System.out.println("its workinig ");
+        }
+        else if(worker.calculator2(44,22) > worker2.calculator1(5,2)){
+            System.out.println("its working 2");
+        }
+        else{
+            System.out.println("Warnning, something doesn't work");
+        }
+
+
+
+    }
+    private int numbs(int test){
+        return test;
+    }
+    private int numbs2(int test1, int test2, int test3){
+        int op = test1 + test2 + test3;
+        return op;
+    }
+    private static void woman(String sister1, String sister2, String sister3){
+        System.out.println(sister1 + " " + sister2 + " " + sister3);
+    }
+
+
+}
+public class employed {
+    private int number10;
+    private int number20;
+
+    public void speak(String name){
+        System.out.println("Hello " + name);
+    }
+
+    public int calculator(int number3){
+
+        return number3;
+    }
+
+    public void testAdmin(){
+        String test1 = "ben";
+        System.out.println(" raz dwa" + test1);
+    }
+
+    public int calculator1(int number10, int number20){
+        int add = number10 + number20;
+        return add;
+    }
+
+    public int calculator2(int number101, int number201){
+        int numbs00 = number101 + number201;
+        return numbs00;
+    }
+
+
+}
+
+
+public class Computer extends employed {
+
+    @Override
+    public void testAdmin() {
+        super.testAdmin();
+        System.out.println("testing");
+    }
+}
